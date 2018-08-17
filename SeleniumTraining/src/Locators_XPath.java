@@ -14,6 +14,7 @@ public class Locators_XPath
 			driver.findElement(By.id("username")).sendKeys("hello");
 			driver.findElement(By.name("pw")).sendKeys("12345");
 			driver.findElement(By.xpath("//*[@id='Login']")).click();
+			System.out.println(driver.findElement(By.cssSelector("div#error.loginError")).getText());
 			
 	}
 
